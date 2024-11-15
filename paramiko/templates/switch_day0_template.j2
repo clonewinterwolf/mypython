@@ -1,0 +1,6 @@
+hostname {{ hostname }}
+aaa new-model 
+aaa session-id unique
+aaa authentication login default local
+int {{mgmt_intf}}
+ip address {{mgmt_ip}} {{mgmt_subnet}}

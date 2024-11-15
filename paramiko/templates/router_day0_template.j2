@@ -1,0 +1,8 @@
+hostname {{ hostname }}
+aaa new-model 
+int {{mgmt_intf}}
+ip address {{mgmt_ip}} {{mgmt_subnet}}
+
+lldp run
+ip ssh version 2
+ip scp server enabled
